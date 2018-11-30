@@ -1,0 +1,24 @@
+
+<form #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
+<div class="form-group">
+  <label>Name</label>
+  <input name="Fname" #Fname="ngModel" [(ngModel)]="service.formData.Fname" class="form-control" required>
+</div>
+<p>  {{service.formData.Fname}}</p>
+<div class="form-group">
+  <label>Last Name</label>
+  <input name="Lname" #Lname="ngModel" [(ngModel)]="service.formData.Lname" class="form-control" required>
+</div>
+<div class="form-group">
+  <label>Email</label>
+  <input name="email" #email="ngModel" [(ngModel)]="service.formData.email" class="form-control" required>
+</div>
+
+  
+  <div class="form-group">
+     
+      <button type="submit" class="btn btn-lg btn-block">SUBMIT</button> 
+  </div>
+
+</form>
+
